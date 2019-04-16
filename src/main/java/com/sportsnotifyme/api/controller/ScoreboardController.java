@@ -3,7 +3,6 @@ package com.sportsnotifyme.api.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.sportsnotifyme.api.util.ContentManager;
 import com.sportsnotifyme.api.util.WebRequest;
 
