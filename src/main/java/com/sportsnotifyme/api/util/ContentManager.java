@@ -18,8 +18,7 @@ public class ContentManager {
 		sb.append("\"games\": ");
 		content = content.replaceAll("%20", " ");
 		content = content.replaceAll("\\^", "");
-		Pattern pattern = Pattern
-				.compile("(nba_s_left.*?=(.*?)\\((.*?)\\).*?&nba_s_right.*?nba_s_url.*?=(.*?gameId=(.*?)&))");
+		Pattern pattern = Pattern.compile("(nba_s_left.*?=(.*?)\\((.*?)\\).*?&nba_s_right.*?nba_s_url.*?=(.*?gameId=(.*?)&))");
 		Matcher matcher = pattern.matcher(content);
 		JSONArray jsonArray = new JSONArray();
 		while (matcher.find()) {
